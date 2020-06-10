@@ -3,6 +3,7 @@ package com.example.todo;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,7 +36,7 @@ import java.util.List;
      @Override
      public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //Use layout inflater to inflate a view
-       View todoView =  LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1, parent, false);
+       View todoView =  LayoutInflater.from(parent.getContext()).inflate(R.layout.items, parent, false);
         // wrap it inside a view Holder and return it
          return new ViewHolder(todoView);
      }
@@ -59,7 +60,7 @@ import java.util.List;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvItem = itemView.findViewById(android.R.id.text1);
+            tvItem= itemView.findViewById(R.id.tvItem);
         }
         // Update the view inside of the viewHolder with this  data
          public void bind(String item) {

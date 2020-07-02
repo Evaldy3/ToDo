@@ -14,7 +14,7 @@
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="14dp"
         android:background="@drawable/button_round"
-        android:text="@string/Add"
+        android:text="Add"
         android:textColor="#ffffff" />
 
     <EditText
@@ -29,7 +29,7 @@
         android:layout_marginBottom="11dp"
         android:background="@drawable/edit_text_round"
         android:gravity="center"
-        android:hint="@string/Add an item here!" />
+        android:hint="Add an item here!" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvItems"
